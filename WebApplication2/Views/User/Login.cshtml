@@ -1,0 +1,27 @@
+﻿@model WebApplication2.Models.ViewModels.LoginViewModel
+@{
+    Layout = null;
+}
+
+<div>
+    類別
+    @Html.DropDownList("ddl")
+</div>
+<div>
+    金額
+    <input type="text" placeholder="金額">
+</div>
+<div>
+    日期
+    <input type="text" placeholder="日期" >
+</div>
+<div>
+    備註
+    <textarea rows="5"></textarea>
+</div>
+<div>
+    <button type="button">送出</button>
+</div>
+<div>
+    @{ Html.RenderAction("table"); }
+</div>
